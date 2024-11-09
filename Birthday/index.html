@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Birthday Celebration</title>
+    <!-- CSS Links -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <h1 id="birthday-title">Happy Birthday</h1>
+    <canvas id="birthday"></canvas>
+    
+    <div id="photo-gallery">
+        <img src="assets/images/photo1.jpg" alt="Birthday Photo 1" class="photo-thumbnail">
+        <img src="assets/images/photo2.jpg" alt="Birthday Photo 2" class="photo-thumbnail">
+        <img src="assets/images/photo3.jpg" alt="Birthday Photo 3" class="photo-thumbnail">
+    </div>
+
+    <div id="photo-modal">
+        <span id="close-modal">&times;</span>
+        <img id="modal-image" src="" alt="Full Size Photo">
+    </div>
+
+    <!-- JS Links (at end of body) -->
+    <script src="js/fireworks.js"></script>
+    <script src="js/gallery.js"></script>
+    <!-- Add this before the closing </body> tag -->
+    <audio id="background-music" loop>
+        <source src="assets/music/birthday-song.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <script src="js/music.js"></script>
+</div>
+</body>
+</html>

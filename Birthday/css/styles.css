@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #020202;
+  overflow: hidden;
+  cursor: crosshair;
+  font-family: 'Arial', sans-serif;
+}
+
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+#birthday-title {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 5em;
+  font-weight: 900;
+  text-shadow: 0 0 20px rgba(255,255,255,0.5);
+  user-select: none;
+  z-index: 2;
+}
+
+#photo-gallery {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 15px;
+  z-index: 3;
+}
+
+.photo-thumbnail {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  box-shadow: 0 0 15px rgba(255,255,255,0.3);
+}
+
+.photo-thumbnail:hover {
+  transform: scale(1.1);
+}
+
+#photo-modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.9);
+  z-index: 1000;
+  justify-content: center;
+  align-items: center;
+}
+
+#modal-image {
+  max-width: 90%;
+  max-height: 90%;
+  object-fit: contain;
+}
+
+#close-modal {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  color: white;
+  font-size: 40px;
+  cursor: pointer;
+}
+#music-controls {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  display: flex;
+  align-items: center;
+  background: rgba(255,255,255,0.2);
+  padding: 10px;
+  border-radius: 10px;
+  z-index: 1000;
+}
+
+#volume-control {
+  width: 100px;
+  accent-color: #fff;
+}
